@@ -5,7 +5,7 @@ import SpecialButton from "./SpecialButton";
 function Specials() {
   const [specialsState] = useState(specials);
   return (
-    <div>
+    <div className="specialContainer">
       {specialsState.map((specials, index) => (
         <SpecialButton key={index} specials={specials} />
       ))}
